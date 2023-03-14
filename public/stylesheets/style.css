@@ -1,0 +1,608 @@
+.footer{
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.footer-a{
+  color: white;
+  text-decoration: none;
+  font-family: Helvetica Now,Helvetica,sans-serif;
+  font-size: x-small;
+}
+
+.add-to-cart{
+display: flex;
+justify-content: space-around;
+}
+
+.text-small{
+font-size: xx-small;
+}
+
+.add-to-cart > button{
+background-color: rgb(255, 255, 255);
+border: solid 1px;
+border-radius: 10px;
+width: 100px;
+border-color: black;
+opacity: 1;
+transition: 0.3s;
+}
+
+.add-to-cart > button:hover{
+opacity: 0.6
+}
+
+.menu-title{
+display: flex;
+justify-content: space-around;
+margin-bottom: -20px;
+}
+.thai-title{
+margin-right: 10px;
+}
+
+.text-link{
+  color: #1a1a1a;
+  font-size: small;
+  display: inline-block;
+  position: relative;
+  text-underline-offset: 2px;
+  font-family: Helvetica Now,Helvetica,sans-serif;
+}
+/*Text linken animation vid touch*/
+.text-link:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color:#1a1a1a;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+/*Hur text linken ska see ut efter*/
+.text-link:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footer-a:hover:hover{
+  color: rgb(220, 220, 220);
+}
+.header{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.img-logo{
+  width: 150px;
+}
+
+.img-shoppingbag{
+  width: 50px;
+}
+.img-login{
+  width: 30px;
+  margin-top:8px;
+}
+
+
+.text-link-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.menu-link{
+  padding-left: 0px;
+  padding-right: 40px;
+  
+}
+.contact-link{
+  padding-left: 40px; 
+}
+
+a{
+  color: black;
+}
+.img-logo2{
+  width: 150px;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+.img-logo3{
+  width: 690px;
+  margin-left: 50%;
+}
+.text-mainscreen{
+  margin-top: -100px;
+  margin-left: 25%;
+  width: 100%;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: large;
+  font-family: Helvetica Now,Helvetica,sans-serif;
+}
+.p{
+  color: #1a1a1a;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: -20px;
+}
+.button-1{
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 90px;
+  height: 40px;
+  font-size: small;
+}
+.button-1:hover{
+  border: solid 2px;
+  text-decoration: underline;
+}
+.right {
+  right: 0;
+  background-image: url(wang1.jpg);
+  background-size: cover;
+}
+.right2 {
+  right: 0;
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  margin-top: 180px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.bild-1{
+  height: 800px;
+}
+.bild-2{
+  height: 50px;
+}
+
+.dropbtn {
+background-color: #ffffff;
+color: black;
+text-align: start;
+margin-top: 20px;
+width: 500px;
+border-radius: 15px;
+border: 2px solid;
+border-color:#1a1a1a;
+padding: 16px;
+font-size: 16px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  text-decoration: underline;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #ffffff;
+border: solid 2px;
+border-radius: 10px;
+min-width: 16 0px;
+box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration:none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(237, 237, 237);}
+
+.show {display:block;}
+
+.dropbtn1 {
+  background-color: #ffffff;
+  color: black;
+  text-align: start;
+  margin-top: 20px;
+  width: 500px;
+  border-radius: 15px;
+  border: 2px solid;
+  border-color:#1a1a1a;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.dropbtn1:hover, .dropbtn1:focus {
+    text-decoration: underline;
+}
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: solid 2px;
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration:none;
+  display: block;
+}
+
+.dropdown-content1 a:hover {background-color: rgb(237, 237, 237);}
+
+.show1 {display:block;}
+
+.dropbtn2 {
+  background-color: #ffffff;
+  color: black;
+  text-align: start;
+  margin-top: 20px;
+  width: 500px;
+  border-radius: 15px;
+  border: 2px solid;
+  border-color:#1a1a1a;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+    text-decoration: underline;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: solid 2px;
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration:none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {background-color: rgb(237, 237, 237);}
+
+.show2 {display:block;}
+
+.menu-items{
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.american{
+  width: 350px;
+  height: 300px;
+  border: solid 2px;
+  border-color: #1a1a1a;
+  border-radius: 15px;
+  background-image: url(american.jpg);
+  background-size: cover;
+}
+.asian{
+  width: 350px;
+  height: 300px;
+  border: solid 2px;
+  border-color: #1a1a1a;
+  border-radius: 15px;
+  background-image: url(Asian.jpg);
+  background-size: cover;
+}
+
+.thai{
+  width: 350px;
+  height: 300px;
+  border: solid 2px;
+  border-color: #1a1a1a;
+  border-radius: 15px;
+  background-image: url(Thai.jpg);
+  background-size: cover;
+}
+.menu-price{
+  display: flex;
+  justify-content: space-around;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica Now,Helvetica,sans-serif;
+}
+.first-row{
+display: flex;
+justify-content: space-evenly;
+margin-top: 50px;
+background-color: white;
+}
+
+.first-column{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 100px;
+margin-right: 100px;
+}
+.first-column > p{
+font-size: x-large;
+}
+.second-column{
+width: 50%;
+display: flex;  
+flex-direction: column;
+justify-content: center;
+margin-left: 100px;
+margin-right: 100px;
+}
+.form{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+width: 460px;
+}
+.email{
+margin-left: 5px;
+width: 200px;
+border-radius: 10px;
+margin-bottom: 5px;
+}
+
+.fullname{
+margin-right: 5px;
+width: 200px;
+border-radius: 10px;
+margin-bottom: 5px;
+height: 30px;
+}
+.form-container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.phonenumber{
+width: 420px;
+border-radius: 10px;
+margin-top: 5px;
+height: 30px;
+}
+.text-area{
+width: 420px;
+height: 30px;
+border-radius: 10px;
+margin-top: 10px;
+border: solid 2px black;
+height: 200px;
+}
+.submit{
+border-radius: 10px;
+width: 80px;
+margin-top: 10px;
+background-color: white;
+}
+
+.submit:hover{
+text-decoration: underline;
+
+}
+.footer1{
+display: flex;
+background-color: black;
+}
+
+.login{
+background-color: white;
+border: solid 1px black;
+border-radius: 10px;
+width: 70px;
+margin-top: 10px;
+margin-right: 5px;
+}
+.signup{
+background-color: white;
+border: solid 1px black;
+border-radius: 10px;
+width: 70px;
+margin-left: 5px;
+margin-top: 10px;
+}
+.signup:hover{
+text-decoration: underline;
+}
+.login:hover{
+text-decoration: underline;
+}
+
+.username{
+margin-bottom: 10px;
+}
+.password{
+margin-bottom: 10px;
+}
+
+.dropbtn5 {
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+padding: 16px;
+font-size: 16px;
+border: solid 1px black;
+border-radius: 15px;
+}
+
+.dropdown5 {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content5 {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 3;
+}
+
+.dropdown-content5 a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content5 a:hover {background-color: #ddd;}
+
+.dropdown5:hover .dropdown-content5 {display: block;}
+
+.dropdown5:hover .dropbtn5 {background-color: #eaeaea;}
+
+.email1{
+width: 200px;
+height: 30px;
+margin-left: 5px;
+}
+.username{
+width: 200px;
+height: 30px;
+margin-right: 5px;
+} 
+.phone{
+width: 420px;
+height: 30px;
+}
+.newpassword{
+width: 200px;
+height: 30px;
+margin-left: 5px;
+margin-top: 10px;
+}
+.oldpassword{
+width: 200px;
+height: 30px;
+margin-right: 5px;
+margin-top: 10px;
+}
+.save{
+height: 30px;
+margin-top: 10px;
+background-color: white;
+border: solid 1px grey;
+color: black;
+border-radius: 10px;
+} 
+
+.profil-pic-div{
+height: 200px;
+width: 200px;
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 50%;
+overflow: hidden;
+}
+.profilpic{
+height: 100%;
+width: 100%;
+}
+
+.file{
+display: none;
+}
+.uploadBtn{
+height: 50px;
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+background:rgba(0,0,0, 0.7);
+color: white;
+line-height: 30px;
+cursor: pointer;
+display: none;
+}
+.varukorgbild1{
+width: 130px;
+height: 100px;
+}
+.varukorgbild2{
+width: 130px;
+height: 100px;
+}
+#theButton{
+width: 430px;
+height: 40px;
+margin-top: 10px;
+}
+
+.hide {
+display: none;
+}
+
+.show {
+display: block;
+}
+#paynowxtext{
+text-decoration: underline;
+display: flex;
+justify-content: center;
+align-items: center;
+}

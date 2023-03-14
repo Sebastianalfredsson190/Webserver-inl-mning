@@ -1,0 +1,21 @@
+extends layout
+block content 
+    script(type='text/javascript' src='//s.trackingmore.com/plugins/v1/buttonCurrent.js')
+    .first-row
+      .first-column
+        p Orders:
+        p Order list
+        p Previous orders:
+        p Previous order list
+      .second-column
+        p
+          | Just simply put in your tracking number and press track (You will find you tracking number in the order conformation found in gmail)
+        div(style='width: 100%;margin:0 auto;text-align:center;')
+          form(role='form' action='//track.trackingmore.com' method='get' onsubmit='return false')
+            .TM_input-group
+              input#button_tracking_number.TM_my_search_input_style(type='text' placeholder='Tracking Number' name='button_tracking_number' value='' autocomplete='off' maxlength='100' style='border-color: #000000')
+              span.TM_input-group-btn
+                button#query.TM_my_search_button_style(type='button' onclick='return doTrack()' style='background-color: #000000') Track
+            input(type='hidden' name='lang' value='en')
+            input#button_express_code(type='hidden' name='lang' value='')
+          #TRNum

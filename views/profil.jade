@@ -1,0 +1,26 @@
+extends layout 
+
+block content 
+   .split.left
+      .profil-pic-div
+        img.profilpic(src='images/hej15.png')
+        input#file.file(type='file' name='file')
+        label.uploadBtn(for='file') Upload photo
+      .centered
+      script(src='images/app2.js')
+
+    .split.right2
+      .form-container
+        form.form(action='/profil', method='post')
+          input#username.username(type='text' name='username' placeholder='Username' value=`${user.username}`)
+          br
+          br
+          input#email1.email1(type='text' name='email' placeholder='Email' value=`${user.email}`)
+          br
+          br
+          input#phone.phone(type='text' name='number' placeholder='Phone number' value=`${user.number}`)
+          br
+          br
+          
+          input.save(type='submit' value='Save')
+      .centered

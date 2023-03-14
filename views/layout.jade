@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='stylesheets/style.css')
+    title Foody
+  body
+    .footer
+      a.footer-a(href='menu.html') 30% OFF
+    if login == 'true'
+      .header
+        .dropdown5
+          img.img-login(src='images/hej15.png')
+          .dropdown-content5
+            a(href='profil') Inställningar
+            a(href='logout') Log out
+        a(href='/')
+          img.img-logo(src='images/foody-logo.jpg')
+        .dropdown5
+          img.img-shoppingbag(src='images/hej10.png')
+          .dropdown-content5
+            a(href='#')
+              p
+              | Asian bag 89.99$
+              p
+              img.varukorgbild1(src='images/Asian.jpg')
+            a(href='#')
+              p Thai bag 229.99$
+                img.varukorgbild2(src='images/Thai.jpg')
+            a#paynowxtext(href='#') Check out
+
+
+    else
+      .header
+        a(href='login')
+          img.img-login(src='images/hej15.png')
+        div
+          img.img-logo(src='images/foody-logo.jpg')
+        a(href='varukorg')
+          img.img-shoppingbag(src='images/hej10.png')
+
+    .text-link-container
+      .menu-link
+        a.text-link(href='menu') Menu
+      .order-link
+        a.text-link(href='order') My orders
+      .contact-link
+        a.text-link(href='contact') Contact us
+
+    block content

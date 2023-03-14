@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .content
+      h1 Contact us
+    .p
+      p
+        | If you have any concerns about your order, please reach out via email at: FoodyContact@gmail.com or fill out the form below. You cant expect a prompt response within 24-48 hour after submitting your ticket
+    .form-container
+      form.form(action='/submit',  method="POST")
+        input#fullname.fullname(type='text' name='fullname' placeholder='Name')
+        br
+        br
+        input#email.email(type='text' name='email' placeholder='Email')
+        br
+        br
+        input#phonenumber.phonenumber(type='text' name='phonenumber' placeholder='Phone Number')
+        br
+        br
+        textarea.text-area(name='text-area' placeholder='Comment')             
+        input.submit(type='submit' value='Submit')

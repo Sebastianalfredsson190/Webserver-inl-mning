@@ -1,0 +1,11 @@
+link(rel='stylesheet' href='stylesheets/style.css')
+block content
+    h1 Register
+    form(action='/register', method='post')
+      label(for='username') Username: 
+      input#username.username(type='text' name='username')
+      br
+      label(for='password') Password: 
+      input#password.password(type='password' name='password')
+      br
+      input.login(type='submit' value='Create')
